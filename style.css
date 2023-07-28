@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 5s ease infinite;
+  background-size: 200% 200%;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  width: min(42.8rem, 90%);
+  background: #fff;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  border-radius: 0.5rem;
+
+  text-align: center;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+}
+
+/*screen1*/
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  color: #34355b;
+  margin-bottom: 1.4rem;
+}
+
+.screen1 p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #34355b;
+  margin-bottom: 3rem;
+}
+
+.screen1 img {
+  cursor: pointer;
+}
+
+/*screen2*/
+.screen2 h1 {
+  margin-bottom: 2.4rem;
+}
+
+.note {
+  background: #e4edf1;
+  width: 29.3rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  margin-bottom: 6rem;
+
+  animation: downtop 1.5s;
+}
+
+.screen2 p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  color: #34355b;
+}
+
+.screen2 img {
+  margin-bottom: 6.5rem;
+}
+
+button {
+  background: #ff9500;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  padding: 1.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #d5820d;
+}
+
+.screen1 img:hover {
+  animation: shake 0.1s infinite;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 0;
+  }
+  75% {
+    margin-left: -5px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes downtop {
+  0% {
+    transform: translateY(150px) scale(5%);
+  }
+  100% {
+    transform: translateY(0px) scale(100%);
+  }
+}
